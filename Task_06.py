@@ -2,16 +2,15 @@
 
 # Пример: - 0,56 -> 11
 
-b = float(input('Введите вещественное число: '))
-a = b
+a = float(input('Введите вещественное число: '))
 while (a > 1):
     a /= 10
 a = str(a).split(sep='.')
 a = int(a[1])
-sum = 0
+summa = 0
 while (a != 0):
-    sum += a % 10
+    summa += a % 10
     a //= 10
 
 
-print(f'{b} -> {sum}')
+print(f'{a} -> {summa}')

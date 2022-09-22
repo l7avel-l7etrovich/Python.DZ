@@ -9,7 +9,7 @@ n = int(input('Введите число N: '))
 count = 1
 fractal = 1
 while (count <= n):
-    fractal = fractal * count
+    fractal *= count
     count += 1
     if count == 2:
         print(f"[ {fractal}", end=", ")
