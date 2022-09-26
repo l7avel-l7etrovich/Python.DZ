@@ -9,7 +9,7 @@ import random
 num = int(input('Введите число:'))
 num1 = []
 for i in range(num, -1, -1):
-    num1.append(f'{random.randint(0, 1)}x^{i}')
+    num1.append(f'{random.randint(0, 9)}x^{i}')
 print(num1)
 for i in range(len(num1)):
     if '1x' in num1[i]:
